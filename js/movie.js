@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const movieId = urlParams.get("id");
 
   if (movieId) {
-    fetch(`http://www.omdbapi.com/?apikey=7a54ec1a&i=${movieId}`)
+    fetch(`https://www.omdbapi.com/?apikey=7a54ec1a&i=${movieId}`)
       .then((response) => response.json())
       .then((movie) => {
         displayMovieDetails(movie);
