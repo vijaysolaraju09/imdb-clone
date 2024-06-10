@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   searchInput.addEventListener("input", () => {
     const query = searchInput.value.trim();
     if (query) {
-      fetch(`http://www.omdbapi.com/?apikey=7a54ec1a&s=${query}`)
+      fetch(`https://www.omdbapi.com/?apikey=7a54ec1a&s=${query}`)
         .then((response) => response.json())
         .then((data) => {
           if (data.Response === "True") {
